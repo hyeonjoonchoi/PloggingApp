@@ -1,0 +1,15 @@
+{
+  "name": "jupgging-frontend",
+  "version": "1.0.0",
+  "description": "GDSC Winter Hack - Plogging Application jupgging Front",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "expo": "~49.0.0",
+    "react-native": "^0.72.6"
+  }
+}
