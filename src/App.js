@@ -19,7 +19,7 @@ function App() {
 
   return (
     <NativeBaseProvider theme={theme}>
-    <Navigation/>
+      <Navigation/>
     </NativeBaseProvider>
  
   );

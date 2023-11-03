@@ -11,42 +11,16 @@ import {
 const Stack = createNativeStackNavigator();
 
 const MainStackNav = () => {
-  const checkAuth = () => {
-    // local ?ЧР?ДЬ userIdые? ъ░??а╕?ЩФ?ЭД?ХМ ?аХы│┤ъ?? ?ЮИ?Лдый? ы░ФыбЬ Home?Ь╝ыб? ы│┤ыВ┤ъ│?, ъ╖╕ыаЗьз? ?ХК?Ь╝ый? Login?Ь╝ыб?
-  };
   return (
-    <Stack.Navigator
-      initialRouteName="Home"
-      screenOptions={{ headerShown: true }}
-    >
-      <Stack.Screen
-        name="Home"
-        component={HomeNav}
-        options={{ headerShown: false }}
-      />
+    <Stack.Navigator initialRouteName="Home" screenOptions={{ headerShown: true }}>
+      <Stack.Screen name="Home" component={HomeNav} options={{ headerShown: false }}/>
       <Stack.Screen name="FeedDetail" component={FeedStackNav} />
       <Stack.Screen name="MyPageEdit" component={MyPageEditScreen} />
-      <Stack.Screen
-        name="Login"
-        component={LoginScreen}
-        options={{ headerShown: false }}
-      />
-      <Stack.Screen
-        name="Signin"
-        component={SigninScreen}
-        options={{
-          headerTitle: "?ЪМ?ЫРъ░??ЮЕ",
-          cardStyle: { backgroundColor: "white" },
-        }}
-      />
-      <Stack.Screen
-        name="Tutorial"
-        component={TutorialScreen}
-        options={{
-          headerShown: false,
-          cardStyle: { backgroundColor: "white" },
-        }}
-      />
+      <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }}/>
+      <Stack.Screen name="Signin" component={SigninScreen}
+        options={{ headerTitle: "????", cardStyle: { backgroundColor: "white" }}}/>
+      <Stack.Screen name="Tutorial" component={TutorialScreen}
+        options={{ headerShown: false, cardStyle: { backgroundColor: "white" }}}/>
     </Stack.Navigator>
   );
 };
